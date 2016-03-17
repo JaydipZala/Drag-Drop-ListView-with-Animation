@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/qtm-kaushik/Desktop/DemoApp/DragDropListView/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/ic_drag_n_drop.png",
+        "source": "/home/qtm-kaushik/Desktop/DemoApp/DragDropListView/app/src/main/res/drawable-mdpi/ic_drag_n_drop.png"
+    },
+    {
+        "merged": "/home/qtm-kaushik/Desktop/DemoApp/DragDropListView/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/ic_launcher.png",
+        "source": "/home/qtm-kaushik/Desktop/DemoApp/DragDropListView/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    }
+]

@@ -1,0 +1,64 @@
+[
+    {
+        "outputFile": "/home/qtm-kaushik/Desktop/DemoApp/DragDropListView/app/build/intermediates/res/merged/debug/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 48,
+                    "endOffset": 99
+                },
+                "from": {
+                    "file": "/home/qtm-kaushik/Desktop/DemoApp/DragDropListView/app/src/main/res/values/dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 63,
+                        "endColumn": 48,
+                        "endOffset": 107
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 104,
+                    "endColumn": 45,
+                    "endOffset": 145
+                },
+                "from": {
+                    "file": "/home/qtm-kaushik/Desktop/DemoApp/DragDropListView/app/src/main/res/values/dimens.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 17,
+                        "endColumn": 45,
+                        "endOffset": 58
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 150,
+                    "endColumn": 60,
+                    "endOffset": 206
+                },
+                "from": {
+                    "file": "/home/qtm-kaushik/Desktop/DemoApp/DragDropListView/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 17,
+                        "endColumn": 60,
+                        "endOffset": 73
+                    }
+                }
+            }
+        ]
+    }
+]

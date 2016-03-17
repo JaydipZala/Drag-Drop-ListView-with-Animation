@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/qtm-kaushik/Desktop/DemoApp/DragDropListView/app/build/intermediates/res/merged/debug/layout/text_view.xml",
+        "source": "/home/qtm-kaushik/Desktop/DemoApp/DragDropListView/app/src/main/res/layout/text_view.xml"
+    },
+    {
+        "merged": "/home/qtm-kaushik/Desktop/DemoApp/DragDropListView/app/build/intermediates/res/merged/debug/layout/activity_list_view.xml",
+        "source": "/home/qtm-kaushik/Desktop/DemoApp/DragDropListView/app/src/main/res/layout/activity_list_view.xml"
+    }
+]
