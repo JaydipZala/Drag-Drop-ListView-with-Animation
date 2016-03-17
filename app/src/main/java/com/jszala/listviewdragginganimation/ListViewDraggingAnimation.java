@@ -50,6 +50,8 @@ public class ListViewDraggingAnimation extends Activity {
                 adapter.notifyDataSetChanged();
             }
         });
+        // enable disable drag drop as per need.
+        listView.setIsDragDopEnabled(true);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

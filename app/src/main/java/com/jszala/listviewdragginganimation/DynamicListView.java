@@ -49,6 +49,7 @@ public class DynamicListView extends ListView {
 
     private boolean mCellIsMobile = false;
     private boolean mIsMobileScrolling = false;
+    private boolean mIsDragDopEnabled = false;
     private int mSmoothScrollAmountAtEdge = 0;
 
     private final int INVALID_ID = -1;
@@ -90,24 +91,31 @@ public class DynamicListView extends ListView {
         mSmoothScrollAmountAtEdge = (int) (SMOOTH_SCROLL_AMOUNT_AT_EDGE / metrics.density);
     }
 
+    public void setIsDragDopEnabled(boolean mIsDragDopEnabled) {
+        this.mIsDragDopEnabled = mIsDragDopEnabled;
+    }
+
     private AdapterView.OnItemLongClickListener mOnItemLongClickListener = new AdapterView.OnItemLongClickListener() {
         public boolean onItemLongClick(AdapterView<?> arg0, View arg1, int pos,
                                        long id) {
-            mTotalOffset = 0;
+            if (mIsDragDopEnabled) {
+                mTotalOffset = 0;
 
-            int position = pointToPosition(mDownX, mDownY);
-            int itemNum = position - getFirstVisiblePosition();
+                int position = pointToPosition(mDownX, mDownY);
+                int itemNum = position - getFirstVisiblePosition();
 
-            View selectedView = getChildAt(itemNum);
-            mMobileItemId = getAdapter().getItemId(position);
-            mHoverCell = getAndAddHoverView(selectedView);
-            selectedView.setVisibility(INVISIBLE);
+                View selectedView = getChildAt(itemNum);
+                mMobileItemId = getAdapter().getItemId(position);
+                mHoverCell = getAndAddHoverView(selectedView);
+                selectedView.setVisibility(INVISIBLE);
 
-            mCellIsMobile = true;
+                mCellIsMobile = true;
 
-            updateNeighborViewsForID(mMobileItemId);
+                updateNeighborViewsForID(mMobileItemId);
 
-            return true;
+                return true;
+            }
+            return false;
         }
     };
 
