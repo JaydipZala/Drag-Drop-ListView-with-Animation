@@ -3,8 +3,8 @@ Drag Drop ListView with Animation
 
 This is demo app for listview with drag drop animation functionality.
 
-**drag drop listener.**
------------------------
+Drag Drop Listener
+------------------
 ```listView.setOnItemDragDropListListener(new OnItemDragDropListListener() {
             @Override
             public void onItemSwap(ArrayList arrayList, int indexOne, int indexTwo) {
@@ -17,6 +17,7 @@ This is demo app for listview with drag drop animation functionality.
             }
         });```
 
-**enable disable drag drop as per need.**
------------------------------------------
+
+enable/disable Drag Drop as per need
+------------------------------------
 ```listView.setIsDragDopEnabled(true);```
