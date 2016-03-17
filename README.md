@@ -3,6 +3,8 @@ Drag Drop ListView with Animation
 
 This is demo app for listview with drag drop animation functionality.
 
+![](https://raw.githubusercontent.com/JaydipZala/Drag-Drop-ListView-with-Animation/master/snapshot/design.png)
+
 Drag Drop Listener
 ------------------
 ```
