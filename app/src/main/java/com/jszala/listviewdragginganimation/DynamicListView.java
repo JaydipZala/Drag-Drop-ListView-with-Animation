@@ -38,7 +38,7 @@ public class DynamicListView extends ListView {
     private final int MOVE_DURATION = 150;
     private final int LINE_THICKNESS = 15;
 
-    public ArrayList<String> mCheeseList;
+    //public ArrayList<String> mCheeseList;
 
     private int mLastEventY = -1;
 
@@ -278,7 +278,7 @@ public class DynamicListView extends ListView {
                 return;
             }
 
-            swapElements(mCheeseList, originalItem,
+            swapElements(originalItem,
                     getPositionForView(switchView));
 
             //((BaseAdapter) getAdapter()).notifyDataSetChanged();
@@ -322,11 +322,11 @@ public class DynamicListView extends ListView {
         this.onItemDragDropListListener = onItemDragDropListListener;
     }
 
-    private void swapElements(ArrayList arrayList, int indexOne, int indexTwo) {
+    private void swapElements(int indexOne, int indexTwo) {
         //Object temp = arrayList.get(indexOne);
         //arrayList.set(indexOne, arrayList.get(indexTwo));
         //arrayList.set(indexTwo, temp);
-        onItemDragDropListListener.onItemSwap(arrayList, indexOne, indexTwo);
+        onItemDragDropListListener.onItemSwap(indexOne, indexTwo);
     }
 
     private void touchEventsEnded() {
@@ -437,10 +437,6 @@ public class DynamicListView extends ListView {
         }
 
         return false;
-    }
-
-    public void setCheeseList(ArrayList<String> cheeseList) {
-        mCheeseList = cheeseList;
     }
 
     private AbsListView.OnScrollListener mScrollListener = new AbsListView.OnScrollListener() {

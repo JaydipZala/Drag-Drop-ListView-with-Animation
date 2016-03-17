@@ -36,12 +36,11 @@ public class ListViewDraggingAnimation extends Activity {
         adapter = new StableArrayAdapter(this, mCheeseList);
         DynamicListView listView = (DynamicListView) findViewById(R.id.listview);
 
-        listView.setCheeseList(mCheeseList);
         listView.setAdapter(adapter);
         listView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
         listView.setOnItemDragDropListListener(new OnItemDragDropListListener() {
             @Override
-            public void onItemSwap(ArrayList arrayList, int indexOne, int indexTwo) {
+            public void onItemSwap(int indexOne, int indexTwo) {
                 // this method will be called when elements swapped.
                 Log.e("index", "indexOne : " + indexOne + ", indexTwo : " + indexTwo);
                 String temp = mCheeseList.get(indexOne);
