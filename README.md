@@ -11,10 +11,6 @@ listView.setOnItemDragDropListListener(new OnItemDragDropListListener() {
             public void onItemSwap(ArrayList arrayList, int indexOne, int indexTwo) {
                 // this method will be called when elements swapped.
                 Log.e("index", "indexOne : " + indexOne + ", indexTwo : " + indexTwo);
-                String temp = mCheeseList.get(indexOne);
-                mCheeseList.set(indexOne, mCheeseList.get(indexTwo));
-                mCheeseList.set(indexTwo, temp);
-                adapter.notifyDataSetChanged();
             }
         });
 ```
