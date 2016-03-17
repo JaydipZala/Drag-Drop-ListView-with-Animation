@@ -16,7 +16,7 @@ listView.setOnItemDragDropListListener(new OnItemDragDropListListener() {
 ```
 
 
-enable/disable Drag Drop as per need
+Enable/Disable Drag Drop as per need
 ------------------------------------
 ```
 listView.setIsDragDopEnabled(true);
